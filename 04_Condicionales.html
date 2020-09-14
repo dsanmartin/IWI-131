@@ -250,8 +250,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#operadores-relacionales" class="md-nav__link">
-    Operadores relacionales
+  <a href="#operadores-relacionales-o-de-comparacion" class="md-nav__link">
+    Operadores relacionales, o de comparación
   </a>
   
 </li>
@@ -264,19 +264,19 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#sentencias-condicionales" class="md-nav__link">
-    Sentencias Condicionales
+  <a href="#instrucciones-condicionales" class="md-nav__link">
+    Instrucciones Condicionales
   </a>
   
-    <nav class="md-nav" aria-label="Sentencias Condicionales">
+    <nav class="md-nav" aria-label="Instrucciones Condicionales">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#condicional-if" class="md-nav__link">
-    Condicional if
+  <a href="#condicional-if-simple-o-de-un-camino" class="md-nav__link">
+    Condicional if simple, o de un camino:
   </a>
   
-    <nav class="md-nav" aria-label="Condicional if">
+    <nav class="md-nav" aria-label="Condicional if simple, o de un camino:">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -306,11 +306,11 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#condicional-if-else" class="md-nav__link">
-    Condicional if-else
+  <a href="#condicional-if-de-dos-caminos-if-else" class="md-nav__link">
+    Condicional if de dos caminos: if-else:
   </a>
   
-    <nav class="md-nav" aria-label="Condicional if-else">
+    <nav class="md-nav" aria-label="Condicional if de dos caminos: if-else:">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -340,11 +340,11 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#condicional-if-elif-else" class="md-nav__link">
-    Condicional if-elif-else
+  <a href="#condicionales-if-en-cascada-if-elif-else" class="md-nav__link">
+    Condicionales if en cascada: if-elif-else
   </a>
   
-    <nav class="md-nav" aria-label="Condicional if-elif-else">
+    <nav class="md-nav" aria-label="Condicionales if en cascada: if-elif-else">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -375,13 +375,6 @@
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#conclusion" class="md-nav__link">
-    Conclusión
-  </a>
   
 </li>
       
@@ -1604,7 +1597,7 @@ h6:hover .anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="operadores-relacionales">Operadores relacionales<a class="anchor-link" href="#Operadores-relacionales">&#182;</a></h2><p>Comparan valores. Operandos pueden ser cualquier expresión que pueda ser comparado. Resultado siempre es un valor lógico.</p>
+<h2 id="operadores-relacionales-o-de-comparacion">Operadores relacionales, o de comparaci&#243;n<a class="anchor-link" href="#Operadores-relacionales,-o-de-comparaci&#243;n">&#182;</a></h2><p>Comparan expresiones de cualquier tipo. El resultado siempre es un valor booleano: <code>True</code> o <code>False</code>.</p>
 
 </div>
 </div>
@@ -1849,7 +1842,7 @@ h6:hover .anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="operadores-logicos">Operadores l&#243;gicos<a class="anchor-link" href="#Operadores-l&#243;gicos">&#182;</a></h2><p>Tienen operandos y resultado de tipo lógico.</p>
+<h2 id="operadores-logicos">Operadores l&#243;gicos<a class="anchor-link" href="#Operadores-l&#243;gicos">&#182;</a></h2><p>Permiten construir expresiones que representan condiciones complejas a partir de otras expresiones booleanas.</p>
 
 </div>
 </div>
@@ -1858,9 +1851,9 @@ h6:hover .anchor-link {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li>Conjunción lógica <code>and</code></li>
-<li>Disyunción lógica <code>or</code></li>
-<li>Negación lógica <code>not</code></li>
+<li>Conjunción lógica <code>and</code> - False si cualquiera de sus operandos es False, True si todos son True.</li>
+<li>Disyunción lógica <code>or</code>  - True si cualquiera de sus operandos es True, False si todos son False.</li>
+<li>Negación lógica <code>not</code>   - True cuando el operando es False, y viceversa.</li>
 </ul>
 
 </div>
@@ -2091,14 +2084,16 @@ h6:hover .anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="sentencias-condicionales">Sentencias Condicionales<a class="anchor-link" href="#Sentencias-Condicionales">&#182;</a></h2>
+<h2 id="instrucciones-condicionales">Instrucciones Condicionales<a class="anchor-link" href="#Instrucciones-Condicionales">&#182;</a></h2>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="condicional-if">Condicional <code>if</code><a class="anchor-link" href="#Condicional-if">&#182;</a></h3><p>La sentencia <code>if</code> ejecuta las instrucciones solo si se cumple una condición. Si la condición es falsa no se hace nada</p>
+<h3 id="condicional-if-simple-o-de-un-camino">Condicional <code>if</code> simple, o de un camino:<a class="anchor-link" href="#Condicional-if-simple,-o-de-un-camino:">&#182;</a></h3><p><code>if</code> Decide, evaluando una condición booleana, si se ejecuta o no una o varias instrucciones contenidas en el <code>if</code>.
+Si la condición es False, el <code>if</code> y las instrucciones que contiene son ignoradas.
+Las instrucciones contenidas en el <code>if</code> deben estar indentadas.</p>
 
 </div>
 </div>
@@ -2107,7 +2102,7 @@ h6:hover .anchor-link {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h4 id="sintaxis">Sintaxis:<a class="anchor-link" href="#Sintaxis:">&#182;</a></h4><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">condicion</span><span class="p">:</span>
-    <span class="n">sentencias</span>
+    <span class="n">instrucciones</span>
 </pre></div>
 <p>La <em>Tabulación/Sangría</em> después de la instrucción <code>if</code> indica que cosas se realizarán si se cumple la condición. Esto se llama <strong>Indentación</strong>.</p>
 
@@ -2157,9 +2152,16 @@ h6:hover .anchor-link {
     <div class="prompt"></div>
 
 
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Ingrese su nota: 70
-Felicitaciones!!!
+<pre>Felicitaciones!!!
 </pre>
 </div>
 </div>
@@ -2195,9 +2197,16 @@ Felicitaciones!!!
     <div class="prompt"></div>
 
 
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Ingrese su nota: 30
-Lamentablemente Ud. ha reprobado.
+<pre>Lamentablemente Ud. ha reprobado.
 </pre>
 </div>
 </div>
@@ -2209,7 +2218,9 @@ Lamentablemente Ud. ha reprobado.
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="condicional-if-else">Condicional <code>if-else</code><a class="anchor-link" href="#Condicional-if-else">&#182;</a></h3><p>La sentencia <code>if-else</code> decide que instrucciones ejecutar, dependiendo si una condición es verdadera o falsa.</p>
+<h3 id="condicional-if-de-dos-caminos-if-else">Condicional if de dos caminos: <code>if-else</code>:<a class="anchor-link" href="#Condicional-if-de-dos-caminos:-if-else:">&#182;</a></h3><p>Decide entre dos grupos de instrucciones cuál ejecutar, evaluando una condición booleana.</p>
+<p>El primer grupo de instrucciones indentandas se ejecutan si la condición es True.</p>
+<p>Si la condición es False, se ejecutan las instrucciones que se encuentran indentadas después de <code>else:</code></p>
 
 </div>
 </div>
@@ -2218,9 +2229,9 @@ Lamentablemente Ud. ha reprobado.
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h4 id="sintaxis">Sintaxis:<a class="anchor-link" href="#Sintaxis:">&#182;</a></h4><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">condicion</span><span class="p">:</span>
-    <span class="n">sentencias</span> <span class="n">cuando</span> <span class="n">la</span> <span class="n">condicion</span> <span class="n">es</span> <span class="n">verdadera</span>
+    <span class="n">instrucciones</span> <span class="n">cuando</span> <span class="n">la</span> <span class="n">condicion</span> <span class="n">es</span> <span class="n">verdadera</span>
 <span class="k">else</span><span class="p">:</span>
-    <span class="n">sentencias</span> <span class="n">cuando</span> <span class="n">la</span> <span class="n">condicion</span> <span class="n">es</span> <span class="n">falsa</span>
+    <span class="n">instrucciones</span> <span class="n">cuando</span> <span class="n">la</span> <span class="n">condicion</span> <span class="n">es</span> <span class="n">falsa</span>
 </pre></div>
 
 </div>
@@ -2271,9 +2282,16 @@ Lamentablemente Ud. ha reprobado.
     <div class="prompt"></div>
 
 
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Cual es su edad? 18
-Usted es adulto
+<pre>Usted es adulto
 </pre>
 </div>
 </div>
@@ -2309,7 +2327,7 @@ Usted es adulto
 <span class="k">else</span><span class="p">:</span>
     <span class="k">print</span><span class="p">(</span><span class="s2">&quot;El numero es impar&quot;</span><span class="p">)</span>
     <span class="k">print</span><span class="p">(</span><span class="s2">&quot;El sucesor del numero es&quot;</span><span class="p">,</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
-<span class="k">print</span><span class="p">(</span><span class="s2">&quot;Done&quot;</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s2">&quot;Fin&quot;</span><span class="p">)</span>
 </pre></div>
 
         </div>
@@ -2326,11 +2344,18 @@ Usted es adulto
     <div class="prompt"></div>
 
 
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Ingrese un numero: 9
-El numero es impar
+<pre>El numero es impar
 El sucesor del numero es 10
-Done
+Fin
 </pre>
 </div>
 </div>
@@ -2342,7 +2367,9 @@ Done
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="condicional-if-elif-else">Condicional <code>if-elif-else</code><a class="anchor-link" href="#Condicional-if-elif-else">&#182;</a></h3><p>La sentencia <code>if-elif-else</code> depende de dos o más condiciones, que son evaluadas en orden. La primera que sea verdadera determina qué instrucciones son ejecutadas.</p>
+<h3 id="condicionales-if-en-cascada-if-elif-else">Condicionales if en cascada: <code>if-elif-else</code><a class="anchor-link" href="#Condicionales-if-en-cascada:-if-elif-else">&#182;</a></h3><p>Permite definir grupos de instrucciones cuya ejecución es excluyente entre sí, a partir de la evaluación de distintas condiciones booleanas que serán evaluadas en cascada, en el orden en que aparecen.</p>
+<p>La primera condición que sea True provoca que las instrucciones asociadas se ejecuten y la instrucción <code>if</code> termine.</p>
+<p>Si ninguna condición es True, se ejecutan las instrucciones que vienen después de <code>else:</code>, si es que aparece esta componente.</p>
 
 </div>
 </div>
@@ -2351,15 +2378,15 @@ Done
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h4 id="sintaxis">Sintaxis:<a class="anchor-link" href="#Sintaxis:">&#182;</a></h4><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">cond1</span><span class="p">:</span>
-    <span class="n">sentencias</span> <span class="n">a</span> <span class="n">ejecutar</span> <span class="n">si</span> <span class="n">cond1</span> <span class="n">es</span> <span class="n">verdadera</span>
+    <span class="n">instrucciones</span> <span class="n">a</span> <span class="n">ejecutar</span> <span class="n">si</span> <span class="n">cond1</span> <span class="n">es</span> <span class="n">verdadera</span>
 <span class="k">elif</span> <span class="n">cond2</span><span class="p">:</span>
-    <span class="n">sentencias</span> <span class="n">a</span> <span class="n">ejecutar</span> <span class="n">si</span> <span class="n">cond2</span> <span class="n">es</span> <span class="n">verdadera</span>
+    <span class="n">instrucciones</span> <span class="n">a</span> <span class="n">ejecutar</span> <span class="n">si</span> <span class="n">cond2</span> <span class="n">es</span> <span class="n">verdadera</span>
 <span class="k">elif</span> <span class="n">cond3</span><span class="p">:</span>
-    <span class="n">sentencias</span> <span class="n">a</span> <span class="n">ejecutar</span> <span class="n">si</span> <span class="n">cond3</span> <span class="n">es</span> <span class="n">verdadera</span>
+    <span class="n">instrucciones</span> <span class="n">a</span> <span class="n">ejecutar</span> <span class="n">si</span> <span class="n">cond3</span> <span class="n">es</span> <span class="n">verdadera</span>
 
 
 <span class="k">else</span><span class="p">:</span>
-    <span class="n">sentencias</span> <span class="n">cuando</span> <span class="n">ninguna</span> <span class="n">condicion</span> <span class="n">anterior</span> <span class="n">es</span> <span class="n">verdadera</span>
+    <span class="n">instrucciones</span> <span class="n">cuando</span> <span class="n">ninguna</span> <span class="n">condicion</span> <span class="n">anterior</span> <span class="n">es</span> <span class="n">verdadera</span>
 </pre></div>
 <p>La <em>Indentación</em> después de cada instrucción <code>elif</code> indica que cosas se realizarán si se cumple su respectiva condición (consecuentemente, si <strong>no</strong> se cumplen las condiciones anteriores)</p>
 
@@ -2427,9 +2454,16 @@ Done
     <div class="prompt"></div>
 
 
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Ingrese su nota: 60
-Usted aprobó con algunas dificultades.
+<pre>Usted aprobó con algunas dificultades.
 </pre>
 </div>
 </div>
@@ -2522,9 +2556,16 @@ Usted aprobó con algunas dificultades.
     <div class="prompt"></div>
 
 
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Ingrese su sueldo: 100
-caso 1
+<pre>caso 1
 Usted debe pagar 0 de impuesto.
 </pre>
 </div>
@@ -2580,9 +2621,16 @@ Usted debe pagar 0 de impuesto.
     <div class="prompt"></div>
 
 
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Ingrese su sueldo: 799
-caso 1
+<pre>caso 1
 Usted debe pagar 0 de impuesto.
 </pre>
 </div>
@@ -2596,26 +2644,6 @@ Usted debe pagar 0 de impuesto.
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>¿En qué se diferencian los dos programas anteriores?</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="conclusion">Conclusi&#243;n<a class="anchor-link" href="#Conclusi&#243;n">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li>Las estructuras condicionales nos permiten realizar labores diferentes dependiendo si se cumple alguna condición.</li>
-<li>La tabulación/sangría indica que elementos <strong>se realizan al cumplir una condición</strong>. Este proceso se llama <strong>Indentación</strong>.</li>
-<li>Una estructura condicional tiene al <code>if</code> como <strong>instrucción obligatoria</strong>.</li>
-<li>Las instrucciones <code>elif</code> y <code>else</code> son <strong>opcionales</strong>. Si son utilizadas, <strong>siempre</strong> irán en compañía de un <code>if</code>.</li>
-</ul>
 
 </div>
 </div>
@@ -2720,9 +2748,16 @@ Usted debe pagar 0 de impuesto.
     <div class="prompt"></div>
 
 
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Ingrese año a consultar: 2020
-True
+<pre>True
 </pre>
 </div>
 </div>
@@ -2767,9 +2802,16 @@ True
     <div class="prompt"></div>
 
 
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Ingrese año a consultar: 2000
-True
+<pre>True
 </pre>
 </div>
 </div>
@@ -2818,9 +2860,16 @@ True
     <div class="prompt"></div>
 
 
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Ingrese año a consultar: 1999
-El año 1999 no es bisiesto.
+<pre>El año 1999 no es bisiesto.
 </pre>
 </div>
 </div>
@@ -2896,11 +2945,16 @@ El año 1999 no es bisiesto.
     <div class="prompt"></div>
 
 
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Ingrese su edad [años]: 34
-Ingrese su peso [kg]: 60
-Ingrese su altura [m]: 1.9
-Su índice de masa corporal es: 16.62
+<pre>Su índice de masa corporal es: 16.62
 Su nivel de riesgo es bajo.
 </pre>
 </div>
@@ -2923,7 +2977,6 @@ Su nivel de riesgo es bajo.
 <p>Realice un ruteo, utilizando la solución diseñada en el Ejercicio 3, para los siguientes valores de entrada:</p>
 <ul>
 <li>Edad 50, peso 65 y altura 1.70.</li>
-<li>Edad 19, peso 80 y altura 1.59.</li>
 </ul>
 
 </div>
