@@ -8,8 +8,14 @@
       
       
       
+      
+        <link rel="prev" href="03_Condicionales.html">
+      
+      
+        <link rel="next" href="05_Funciones.html">
+      
       <link rel="icon" href="images/favicon.png">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.6">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.2">
     
     
       
@@ -17,13 +23,13 @@
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.4a0965b7.min.css">
+      <link rel="stylesheet" href="assets/stylesheets/main.7bf56d0a.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.cbb835fc.min.css">
-        
+        <link rel="stylesheet" href="assets/stylesheets/palette.a0c5b2b5.min.css">
       
       
+
     
     
     
@@ -36,10 +42,11 @@
       
     
     
-    <script>__md_scope=new URL(".",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
+    
     
     
   </head>
@@ -50,7 +57,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
   
     
     
@@ -72,12 +79,14 @@
     
       
 
-<header class="md-header" data-md-component="header">
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="index.html" title="IWI-131 Programación" class="md-header__button md-logo" aria-label="IWI-131 Programación" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M128 96h384v256h64V80c0-26.37-21.6-48-48-48H112c-26.37 0-48 21.63-48 48v272h64V96zm496 288H16c-8.75 0-16 7.3-16 16v16c0 35.25 28.75 64 64 64h512c35.25 0 64-28.75 64-64v-16c0-8.7-7.2-16-16-16zm-258.1-97.8c3.9 3.9 9 5.8 14.1 5.8s10.23-1.938 14.14-5.844l48-48c7.812-7.813 7.812-20.5 0-28.31l-48-48c-7.812-7.813-20.47-7.813-28.28 0-7.812 7.813-7.812 20.5 0 28.31l33.86 33.84-33.86 33.84C358 265.7 358 278.4 365.9 286.2zm-91.8-124.3c-7.812-7.813-20.47-7.813-28.28 0l-48 48c-7.812 7.813-7.812 20.5 0 28.31l48 48C249.8 290.1 254.9 292 260 292s10.23-1.938 14.14-5.844c7.812-7.813 7.812-20.5 0-28.31L240.3 224l33.86-33.84c6.94-7.76 6.94-20.46-.06-28.26z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M64 96c0-35.3 28.7-64 64-64h384c35.3 0 64 28.7 64 64v256h-64V96H128v256H64V96zM0 403.2C0 392.6 8.6 384 19.2 384h601.6c10.6 0 19.2 8.6 19.2 19.2 0 42.4-34.4 76.8-76.8 76.8H76.8C34.4 480 0 445.6 0 403.2zM281 209l-31 31 31 31c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-48-48c-9.4-9.4-9.4-24.6 0-33.9l48-48c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9zm112-34 48 48c9.4 9.4 9.4 24.6 0 33.9l-48 48c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l31-31-31-31c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0z"/></svg>
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -116,7 +125,7 @@
       </label>
       <nav class="md-search__options" aria-label="Search">
         
-        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
         </button>
       </nav>
@@ -128,7 +137,7 @@
           <div class="md-search-result__meta">
             Initializing search
           </div>
-          <ol class="md-search-result__list"></ol>
+          <ol class="md-search-result__list" role="presentation"></ol>
         </div>
       </div>
     </div>
@@ -140,7 +149,7 @@
         <a href="https://github.com/progra-utfsm/material" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
   </div>
   <div class="md-source__repository">
     progra-utfsm/material
@@ -175,7 +184,7 @@
     <a href="index.html" title="IWI-131 Programación" class="md-nav__button md-logo" aria-label="IWI-131 Programación" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M128 96h384v256h64V80c0-26.37-21.6-48-48-48H112c-26.37 0-48 21.63-48 48v272h64V96zm496 288H16c-8.75 0-16 7.3-16 16v16c0 35.25 28.75 64 64 64h512c35.25 0 64-28.75 64-64v-16c0-8.7-7.2-16-16-16zm-258.1-97.8c3.9 3.9 9 5.8 14.1 5.8s10.23-1.938 14.14-5.844l48-48c7.812-7.813 7.812-20.5 0-28.31l-48-48c-7.812-7.813-20.47-7.813-28.28 0-7.812 7.813-7.812 20.5 0 28.31l33.86 33.84-33.86 33.84C358 265.7 358 278.4 365.9 286.2zm-91.8-124.3c-7.812-7.813-20.47-7.813-28.28 0l-48 48c-7.812 7.813-7.812 20.5 0 28.31l48 48C249.8 290.1 254.9 292 260 292s10.23-1.938 14.14-5.844c7.812-7.813 7.812-20.5 0-28.31L240.3 224l33.86-33.84c6.94-7.76 6.94-20.46-.06-28.26z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M64 96c0-35.3 28.7-64 64-64h384c35.3 0 64 28.7 64 64v256h-64V96H128v256H64V96zM0 403.2C0 392.6 8.6 384 19.2 384h601.6c10.6 0 19.2 8.6 19.2 19.2 0 42.4-34.4 76.8-76.8 76.8H76.8C34.4 480 0 445.6 0 403.2zM281 209l-31 31 31 31c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-48-48c-9.4-9.4-9.4-24.6 0-33.9l48-48c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9zm112-34 48 48c9.4 9.4 9.4 24.6 0 33.9l-48 48c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l31-31-31-31c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0z"/></svg>
 
     </a>
     IWI-131 Programación
@@ -185,7 +194,7 @@
       <a href="https://github.com/progra-utfsm/material" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
   </div>
   <div class="md-source__repository">
     progra-utfsm/material
@@ -217,57 +226,10 @@
   
   
   
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_2">
-          Introducción
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Introducción" data-md-level="1">
-        <label class="md-nav__title" for="__nav_2">
-          <span class="md-nav__icon md-icon"></span>
-          Introducción
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
     <li class="md-nav__item">
       <a href="01_Intro_Programacion.html" class="md-nav__link">
-        Algoritmos
+        Introducción
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="01-a_Uso_Trinket.html" class="md-nav__link">
-        Trinket
-      </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
     </li>
   
 
@@ -313,7 +275,7 @@
   
     <li class="md-nav__item md-nav__item--active">
       
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
         
@@ -930,10 +892,11 @@
               </div>
             
           
-          <div class="md-content" data-md-component="content">
-            <article class="md-content__inner md-typeset">
-              
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
                 
+                  
 
 
 <script>
@@ -1130,6 +1093,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 .highlight-ipynb .m { color: var(--jp-mirror-editor-number-color) } /* Literal.Number */
 .highlight-ipynb .s { color: var(--jp-mirror-editor-string-color) } /* Literal.String */
 .highlight-ipynb .ow { color: var(--jp-mirror-editor-operator-color); font-weight: bold } /* Operator.Word */
+.highlight-ipynb .pm { color: var(--jp-mirror-editor-punctuation-color) } /* Punctuation.Marker */
 .highlight-ipynb .w { color: var(--jp-mirror-editor-variable-color) } /* Text.Whitespace */
 .highlight-ipynb .mb { color: var(--jp-mirror-editor-number-color) } /* Literal.Number.Bin */
 .highlight-ipynb .mf { color: var(--jp-mirror-editor-number-color) } /* Literal.Number.Float */
@@ -1954,12 +1918,12 @@ Licensed under the Apache License, Version 2.0.
                 },
                 displayAlign: 'center',
                 CommonHTML: {
-                    linebreaks: { 
-                    automatic: true 
+                    linebreaks: {
+                    automatic: true
                     }
                 }
             });
-        
+
             MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
         }
     }
@@ -1972,7 +1936,7 @@ Licensed under the Apache License, Version 2.0.
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="iwi-131-programacion">IWI-131 Programaci&#243;n<a class="anchor-link" href="#iwi-131-programacion">&#182;</a></h1>
+<h1 id="IWI-131-Programaci%C3%B3n">IWI-131 Programaci&#243;n<a class="anchor-link" href="#IWI-131-Programaci%C3%B3n">&#182;</a></h1>
 </div>
 </div>
 </div>
@@ -1983,7 +1947,7 @@ Licensed under the Apache License, Version 2.0.
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="ciclos">Ciclos<a class="anchor-link" href="#ciclos">&#182;</a></h2><p>Permiten repetir un conjunto de instrucciones.</p>
+<h2 id="Ciclos">Ciclos<a class="anchor-link" href="#Ciclos">&#182;</a></h2><p>Permiten repetir un conjunto de instrucciones.</p>
 <p>Hay dos tipos de ciclos:</p>
 <ul>
 <li>Los que se ejecutan una determinada cantidad de veces, conocida previamente.</li>
@@ -2001,7 +1965,7 @@ Licensed under the Apache License, Version 2.0.
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="instruccion-while">Instrucci&#243;n while<a class="anchor-link" href="#instruccion-while">&#182;</a></h3><p>Una instrucción <code>while</code> ejecuta una secuencia de instrucciones mientras una condición sea <strong>verdadera</strong>.</p>
+<h3 id="Instrucci%C3%B3n-while">Instrucci&#243;n while<a class="anchor-link" href="#Instrucci%C3%B3n-while">&#182;</a></h3><p>Una instrucción <code>while</code> ejecuta una secuencia de instrucciones mientras una condición sea <strong>verdadera</strong>.</p>
 <p>Las instrucciones que se repiten son las que se encuentran indentadas a la derecha, dentro de la instrucción <code>while</code>.</p>
 
 </div>
@@ -2014,7 +1978,7 @@ Licensed under the Apache License, Version 2.0.
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="sintaxis">&#160;Sintaxis<a class="anchor-link" href="#sintaxis">&#182;</a></h4><div class="highlight"><pre><span></span><span class="k">while</span> <span class="n">condición</span><span class="p">:</span>
+<h4 id="Sintaxis">Sintaxis<a class="anchor-link" href="#Sintaxis">&#182;</a></h4><div class="highlight"><pre><span></span><span class="k">while</span> <span class="n">condición</span><span class="p">:</span>
     <span class="n">instrucciones</span> <span class="n">mientras</span> <span class="n">la</span> <span class="n">condición</span> <span class="n">sea</span> <span class="n">verdadera</span>
 </pre></div>
 
@@ -2028,7 +1992,7 @@ Licensed under the Apache License, Version 2.0.
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="notas-adicionales">Notas adicionales:<a class="anchor-link" href="#notas-adicionales">&#182;</a></h4><ul>
+<h4 id="Notas-adicionales:">Notas adicionales:<a class="anchor-link" href="#Notas-adicionales:">&#182;</a></h4><ul>
 <li>A una ejecución de las instrucciones que componen el ciclo se le llama <strong>iteración</strong>.</li>
 <li>La condición de un <code>while</code> es evaluada antes de cada iteración.</li>
 <li>Por lo anterior, es posible que un <code>while</code> <strong>no ejecute</strong> ninguna iteración, si la condición es <code>False</code> al inicio.</li>
@@ -2044,7 +2008,7 @@ Licensed under the Apache License, Version 2.0.
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="entendemos-while">&#191;Entendemos <code>while</code>?<a class="anchor-link" href="#entendemos-while">&#182;</a></h4><ul>
+<h4 id="%C2%BFEntendemos-while?">&#191;Entendemos <code>while</code>?<a class="anchor-link" href="#%C2%BFEntendemos-while?">&#182;</a></h4><ul>
 <li>¿Qué realiza el siguiente ejemplo?</li>
 </ul>
 
@@ -2104,9 +2068,7 @@ print("El producto de m y n es:",k)</div>
 
 
 <div class="jp-OutputArea jp-Cell-outputArea">
-
 <div class="jp-OutputArea-child">
-
     
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
@@ -2146,7 +2108,7 @@ El producto de m y n es: 20
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="uso-de-ciclos">Uso de Ciclos<a class="anchor-link" href="#uso-de-ciclos">&#182;</a></h2>
+<h2 id="Uso-de-Ciclos">Uso de Ciclos<a class="anchor-link" href="#Uso-de-Ciclos">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -2221,9 +2183,7 @@ print("El promedio del paralelo es:", int(round(suma/cont)))</div>
 
 
 <div class="jp-OutputArea jp-Cell-outputArea">
-
 <div class="jp-OutputArea-child">
-
     
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
@@ -2313,9 +2273,7 @@ print("El promedio es:", int(round(suma/cont)))</div>
 
 
 <div class="jp-OutputArea jp-Cell-outputArea">
-
 <div class="jp-OutputArea-child">
-
     
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
@@ -2408,9 +2366,7 @@ print("El promedio es:", int(round(suma/cont)))</div>
 
 
 <div class="jp-OutputArea jp-Cell-outputArea">
-
 <div class="jp-OutputArea-child">
-
     
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
@@ -2436,7 +2392,7 @@ El promedio es: 15
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="patrones-comunes">Patrones Comunes<a class="anchor-link" href="#patrones-comunes">&#182;</a></h2><p>Un patrón es una solución que puede ser aplicada a distintos problemas o situaciones, con ligeros cambios.</p>
+<h2 id="Patrones-Comunes">Patrones Comunes<a class="anchor-link" href="#Patrones-Comunes">&#182;</a></h2><p>Un patrón es una solución que puede ser aplicada a distintos problemas o situaciones, con ligeros cambios.</p>
 
 </div>
 </div>
@@ -2466,7 +2422,7 @@ El promedio es: 15
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="1-patron-de-acumulacion-con-suma">1. Patr&#243;n de acumulaci&#243;n con suma.<a class="anchor-link" href="#1-patron-de-acumulacion-con-suma">&#182;</a></h3>
+<h3 id="1.-Patr%C3%B3n-de-acumulaci%C3%B3n-con-suma.">1. Patr&#243;n de acumulaci&#243;n con suma.<a class="anchor-link" href="#1.-Patr%C3%B3n-de-acumulaci%C3%B3n-con-suma.">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -2540,9 +2496,7 @@ print("La suma de los numeros al cuadrado es:", suma)</div>
 
 
 <div class="jp-OutputArea jp-Cell-outputArea">
-
 <div class="jp-OutputArea-child">
-
     
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
@@ -2566,7 +2520,7 @@ La suma de los numeros al cuadrado es: 30
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="estructura-del-patron-de-acumulacion-con-suma">&#160;Estructura del patr&#243;n de acumulaci&#243;n con suma:<a class="anchor-link" href="#estructura-del-patron-de-acumulacion-con-suma">&#182;</a></h4><div class="highlight"><pre><span></span><span class="n">suma</span> <span class="o">=</span> <span class="mi">0</span>
+<h4 id="Estructura-del-patr%C3%B3n-de-acumulaci%C3%B3n-con-suma:">Estructura del patr&#243;n de acumulaci&#243;n con suma:<a class="anchor-link" href="#Estructura-del-patr%C3%B3n-de-acumulaci%C3%B3n-con-suma:">&#182;</a></h4><div class="highlight"><pre><span></span><span class="n">suma</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="k">while</span> <span class="p">(</span><span class="n">condición_del_ciclo</span><span class="p">):</span>
     <span class="n">n</span> <span class="o">=</span> <span class="o">...</span> <span class="c1">#calcular lo que se quiere acumular</span>
     <span class="n">suma</span> <span class="o">=</span> <span class="n">suma</span> <span class="o">+</span> <span class="n">n</span>
@@ -2594,7 +2548,7 @@ La suma de los numeros al cuadrado es: 30
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="2-patron-de-acumulacion-con-multiplicacion">2. Patr&#243;n de acumulaci&#243;n con multiplicaci&#243;n<a class="anchor-link" href="#2-patron-de-acumulacion-con-multiplicacion">&#182;</a></h3>
+<h3 id="2.-Patr%C3%B3n-de-acumulaci%C3%B3n-con-multiplicaci%C3%B3n">2. Patr&#243;n de acumulaci&#243;n con multiplicaci&#243;n<a class="anchor-link" href="#2.-Patr%C3%B3n-de-acumulaci%C3%B3n-con-multiplicaci%C3%B3n">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -2672,9 +2626,7 @@ else:
 
 
 <div class="jp-OutputArea jp-Cell-outputArea">
-
 <div class="jp-OutputArea-child">
-
     
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
@@ -2698,7 +2650,7 @@ El factorial de 3 es: 6
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="estructura-del-patron-de-acumulacion-con-multiplicacion">Estructura del patr&#243;n de acumulaci&#243;n con multiplicaci&#243;n:<a class="anchor-link" href="#estructura-del-patron-de-acumulacion-con-multiplicacion">&#182;</a></h4><div class="highlight"><pre><span></span><span class="n">producto</span> <span class="o">=</span> <span class="mi">1</span>
+<h4 id="Estructura-del-patr%C3%B3n-de-acumulaci%C3%B3n-con-multiplicaci%C3%B3n:">Estructura del patr&#243;n de acumulaci&#243;n con multiplicaci&#243;n:<a class="anchor-link" href="#Estructura-del-patr%C3%B3n-de-acumulaci%C3%B3n-con-multiplicaci%C3%B3n:">&#182;</a></h4><div class="highlight"><pre><span></span><span class="n">producto</span> <span class="o">=</span> <span class="mi">1</span>
 <span class="k">while</span> <span class="p">(</span><span class="n">condición_del_ciclo</span><span class="p">):</span>
     <span class="n">n</span> <span class="o">=</span> <span class="o">...</span> <span class="c1">#calcular lo que se quiere acumular</span>
     <span class="n">producto</span> <span class="o">=</span> <span class="n">producto</span> <span class="o">*</span> <span class="n">n</span>
@@ -2738,7 +2690,7 @@ El factorial de 3 es: 6
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="3-patron-de-conteo">3. Patr&#243;n de conteo<a class="anchor-link" href="#3-patron-de-conteo">&#182;</a></h3>
+<h3 id="3.-Patr%C3%B3n-de-conteo">3. Patr&#243;n de conteo<a class="anchor-link" href="#3.-Patr%C3%B3n-de-conteo">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -2817,9 +2769,7 @@ print("La cantidad de pares ingresados es:", pares)</div>
 
 
 <div class="jp-OutputArea jp-Cell-outputArea">
-
 <div class="jp-OutputArea-child">
-
     
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
@@ -2849,7 +2799,7 @@ La cantidad de pares ingresados es: 2
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="estructura-del-patron-de-conteo">Estructura del patr&#243;n de conteo:<a class="anchor-link" href="#estructura-del-patron-de-conteo">&#182;</a></h4><div class="highlight"><pre><span></span><span class="n">contador</span> <span class="o">=</span> <span class="mi">0</span>
+<h4 id="Estructura-del-patr%C3%B3n-de-conteo:">Estructura del patr&#243;n de conteo:<a class="anchor-link" href="#Estructura-del-patr%C3%B3n-de-conteo:">&#182;</a></h4><div class="highlight"><pre><span></span><span class="n">contador</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="k">while</span> <span class="p">(</span><span class="n">condición_del_ciclo</span><span class="p">):</span>
     <span class="k">if</span> <span class="p">(</span><span class="n">condición_para_contar</span><span class="p">):</span>
         <span class="n">contador</span> <span class="o">=</span> <span class="n">contador</span> <span class="o">+</span> <span class="mi">1</span>
@@ -2877,7 +2827,7 @@ La cantidad de pares ingresados es: 2
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="4-patron-de-encontrar-el-mayor-maximo">4. Patr&#243;n de encontrar el mayor (m&#225;ximo)<a class="anchor-link" href="#4-patron-de-encontrar-el-mayor-maximo">&#182;</a></h3>
+<h3 id="4.-Patr%C3%B3n-de-encontrar-el-mayor-(m%C3%A1ximo)">4. Patr&#243;n de encontrar el mayor (m&#225;ximo)<a class="anchor-link" href="#4.-Patr%C3%B3n-de-encontrar-el-mayor-(m%C3%A1ximo)">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -2970,9 +2920,7 @@ print("El numero mayor es:", mayor)</div>
 
 
 <div class="jp-OutputArea jp-Cell-outputArea">
-
 <div class="jp-OutputArea-child">
-
     
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
@@ -3070,9 +3018,7 @@ print("El numero mayor es", mayor)</div>
 
 
 <div class="jp-OutputArea jp-Cell-outputArea">
-
 <div class="jp-OutputArea-child">
-
     
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
@@ -3099,7 +3045,7 @@ El numero mayor es 3.0
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="estructura-del-patron-de-encontrar-el-mayor"><strong>Estructura del patr&#243;n de encontrar el mayor:</strong><a class="anchor-link" href="#estructura-del-patron-de-encontrar-el-mayor">&#182;</a></h4><div class="highlight"><pre><span></span><span class="n">mayor</span> <span class="o">=</span> <span class="n">numero_muy_chico</span>
+<h4 id="Estructura-del-patr%C3%B3n-de-encontrar-el-mayor:"><strong>Estructura del patr&#243;n de encontrar el mayor:</strong><a class="anchor-link" href="#Estructura-del-patr%C3%B3n-de-encontrar-el-mayor:">&#182;</a></h4><div class="highlight"><pre><span></span><span class="n">mayor</span> <span class="o">=</span> <span class="n">numero_muy_chico</span>
 <span class="k">while</span> <span class="p">(</span><span class="n">condición_del_ciclo</span><span class="p">):</span>
     <span class="n">n</span> <span class="o">=</span> <span class="o">...</span> <span class="c1">#determinar lo que se quiere comparar</span>
     <span class="k">if</span> <span class="n">n</span> <span class="o">&gt;</span> <span class="n">mayor</span><span class="p">:</span>
@@ -3128,7 +3074,7 @@ El numero mayor es 3.0
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="5-patron-de-encontrar-el-menor-minimo">5. Patr&#243;n de encontrar el menor (m&#237;nimo)<a class="anchor-link" href="#5-patron-de-encontrar-el-menor-minimo">&#182;</a></h3>
+<h3 id="5.-Patr%C3%B3n-de-encontrar-el-menor-(m%C3%ADnimo)">5. Patr&#243;n de encontrar el menor (m&#237;nimo)<a class="anchor-link" href="#5.-Patr%C3%B3n-de-encontrar-el-menor-(m%C3%ADnimo)">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -3205,9 +3151,7 @@ print("El numero menor es:", menor)</div>
 
 
 <div class="jp-OutputArea jp-Cell-outputArea">
-
 <div class="jp-OutputArea-child">
-
     
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
@@ -3234,7 +3178,7 @@ El numero menor es: 1.0
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="estructura-del-patron-de-encontrar-el-menor">Estructura del patr&#243;n de encontrar el menor:<a class="anchor-link" href="#estructura-del-patron-de-encontrar-el-menor">&#182;</a></h4><div class="highlight"><pre><span></span><span class="n">menor</span> <span class="o">=</span> <span class="n">numero_muy_grande</span>
+<h4 id="Estructura-del-patr%C3%B3n-de-encontrar-el-menor:">Estructura del patr&#243;n de encontrar el menor:<a class="anchor-link" href="#Estructura-del-patr%C3%B3n-de-encontrar-el-menor:">&#182;</a></h4><div class="highlight"><pre><span></span><span class="n">menor</span> <span class="o">=</span> <span class="n">numero_muy_grande</span>
 <span class="k">while</span> <span class="p">(</span><span class="n">condición_del_ciclo</span><span class="p">):</span>
     <span class="n">n</span> <span class="o">=</span> <span class="o">...</span> <span class="c1">#determinar lo que se quiere comparar</span>
     <span class="k">if</span> <span class="n">n</span> <span class="o">&lt;</span> <span class="n">menor</span><span class="p">:</span>
@@ -3251,7 +3195,7 @@ El numero menor es: 1.0
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="ciclos-anidados">Ciclos anidados<a class="anchor-link" href="#ciclos-anidados">&#182;</a></h3><p>Dentro de un ciclo es posible incluir cualquier tipo de instrucción, incluso otros ciclos.</p>
+<h3 id="Ciclos-anidados">Ciclos anidados<a class="anchor-link" href="#Ciclos-anidados">&#182;</a></h3><p>Dentro de un ciclo es posible incluir cualquier tipo de instrucción, incluso otros ciclos.</p>
 <p>Cuando un ciclo se encuentra dentro de otro ciclo, el ciclo interno se ejecutará completo en cada iteración del ciclo externo.</p>
 
 </div>
@@ -3264,12 +3208,12 @@ El numero menor es: 1.0
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="ejemplo-1">Ejemplo 1:<a class="anchor-link" href="#ejemplo-1">&#182;</a></h4><p>Escribir un programa que imprima en la pantalla un rectángulo de asteriscos como el siguiente, que tiene 4 filas con 10 asteriscos cada una:</p>
-
+<h4 id="Ejemplo-1:">Ejemplo 1:<a class="anchor-link" href="#Ejemplo-1:">&#182;</a></h4><p>Escribir un programa que imprima en la pantalla un rectángulo de asteriscos como el siguiente, que tiene 4 filas con 10 asteriscos cada una:</p>
 <pre><code>**********
 **********
 **********
-**********</code></pre>
+**********
+</code></pre>
 
 </div>
 </div>
@@ -3327,9 +3271,7 @@ while fila < 4:
 
 
 <div class="jp-OutputArea jp-Cell-outputArea">
-
 <div class="jp-OutputArea-child">
-
     
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
@@ -3367,7 +3309,7 @@ while fila < 4:
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Entonces, ¿cuántas veces en total se ejecuta la instrucción <code>linea = linea + "*"</code>?</p>
+<p>Entonces, ¿cuántas veces en total se ejecuta la instrucción <code>linea = linea + &quot;*&quot;</code>?</p>
 
 </div>
 </div>
@@ -3391,7 +3333,7 @@ while fila < 4:
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="ejercicio">Ejercicio:<a class="anchor-link" href="#ejercicio">&#182;</a></h4><p>Modificar el programa anterior para que la cantidad de filas y columnas sean entradas, pudiendo dibujar así rectángulos de diferentes dimensiones.</p>
+<h4 id="Ejercicio:">Ejercicio:<a class="anchor-link" href="#Ejercicio:">&#182;</a></h4><p>Modificar el programa anterior para que la cantidad de filas y columnas sean entradas, pudiendo dibujar así rectángulos de diferentes dimensiones.</p>
 
 </div>
 </div>
@@ -3453,9 +3395,7 @@ while fila < cantidad_filas:
 
 
 <div class="jp-OutputArea jp-Cell-outputArea">
-
 <div class="jp-OutputArea-child">
-
     
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
@@ -3483,7 +3423,7 @@ Ingrese la cantidad de columnas: 5
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="ejemplo-2">Ejemplo 2:<a class="anchor-link" href="#ejemplo-2">&#182;</a></h4><p>Escribir un programa que muestre todas las combinaciones posibles al lanzar $2$ dados.</p>
+<h4 id="Ejemplo-2:">Ejemplo 2:<a class="anchor-link" href="#Ejemplo-2:">&#182;</a></h4><p>Escribir un programa que muestre todas las combinaciones posibles al lanzar $2$ dados.</p>
 
 </div>
 </div>
@@ -3537,9 +3477,7 @@ while i <= 6:
 
 
 <div class="jp-OutputArea jp-Cell-outputArea">
-
 <div class="jp-OutputArea-child">
-
     
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
@@ -3597,7 +3535,7 @@ while i <= 6:
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="ejercicios">Ejercicios<a class="anchor-link" href="#ejercicios">&#182;</a></h2>
+<h2 id="Ejercicios">Ejercicios<a class="anchor-link" href="#Ejercicios">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -3608,7 +3546,7 @@ while i <= 6:
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="ejercicio-1-conjetura-de-ulam">Ejercicio 1: Conjetura de Ulam<a class="anchor-link" href="#ejercicio-1-conjetura-de-ulam">&#182;</a></h3><p>A partir de un número cualquiera (entrada) es posible hacer una sucesión de números que termina en $1$.</p>
+<h3 id="Ejercicio-1:-Conjetura-de-Ulam">Ejercicio 1: Conjetura de Ulam<a class="anchor-link" href="#Ejercicio-1:-Conjetura-de-Ulam">&#182;</a></h3><p>A partir de un número cualquiera (entrada) es posible hacer una sucesión de números que termina en $1$.</p>
 <ul>
 <li>Si el número es par, se debe dividir por $2$.</li>
 <li>Si el número es impar, se debe multiplicar por $3$ y sumarle $1$.</li>
@@ -3673,9 +3611,7 @@ print(int(t))</div>
 
 
 <div class="jp-OutputArea jp-Cell-outputArea">
-
 <div class="jp-OutputArea-child">
-
     
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
@@ -3706,7 +3642,7 @@ print(int(t))</div>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="ejercicio-2">Ejercicio 2<a class="anchor-link" href="#ejercicio-2">&#182;</a></h3><p>Escriba un programa que determine si un número es <strong>primo</strong> o <strong>compuesto</strong>.</p>
+<h3 id="Ejercicio-2">Ejercicio 2<a class="anchor-link" href="#Ejercicio-2">&#182;</a></h3><p>Escriba un programa que determine si un número es <strong>primo</strong> o <strong>compuesto</strong>.</p>
 
 </div>
 </div>
@@ -3772,9 +3708,7 @@ else:
 
 
 <div class="jp-OutputArea jp-Cell-outputArea">
-
 <div class="jp-OutputArea-child">
-
     
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
@@ -3798,7 +3732,7 @@ Es primo
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="ejercicio-3">Ejercicio 3<a class="anchor-link" href="#ejercicio-3">&#182;</a></h3><p>Utilizando el programa diseñado anteriormente para determinar si un número es primo o compuesto. Realice el ruteo para los siguientes valores:</p>
+<h3 id="Ejercicio-3">Ejercicio 3<a class="anchor-link" href="#Ejercicio-3">&#182;</a></h3><p>Utilizando el programa diseñado anteriormente para determinar si un número es primo o compuesto. Realice el ruteo para los siguientes valores:</p>
 <ul>
 <li>5</li>
 </ul>
@@ -3849,8 +3783,8 @@ Es primo
         <td style="border-right: 1px solid black;">&emsp;</td>
         <td>5</td>
     </tr>
-
-</table><table style="font-size: 1em; float:center;">
+</table>
+<table style="font-size: 1em; float:center;">
     <tr>
         <td style="text-align:left" align="left"><b>Pantalla:</b></td>
     </tr>
@@ -3858,6 +3792,7 @@ Es primo
         <td style="text-align:left">Es primo<br/>&emsp;<br/></td>
     </tr>
 </table>
+
 </div>
 </div>
 </div>
@@ -3866,51 +3801,20 @@ Es primo
 
 
 
-              
-            </article>
-            
-          </div>
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
         </div>
         
       </main>
       
         <footer class="md-footer">
-  
-    
-    <nav class="md-footer__inner md-grid" aria-label="Footer" >
-      
-        
-        <a href="03_Condicionales.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: Condicionales" rel="prev">
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
-          </div>
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Previous
-              </span>
-              Condicionales
-            </div>
-          </div>
-        </a>
-      
-      
-        
-        <a href="05_Funciones.html" class="md-footer__link md-footer__link--next" aria-label="Next: Funciones" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              Funciones
-            </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
-          </div>
-        </a>
-      
-    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
@@ -3936,10 +3840,11 @@ Es primo
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.instant"], "search": "assets/javascripts/workers/search.85cb4492.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.instant"], "search": "assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="assets/javascripts/bundle.a877e258.min.js"></script>
+      <script src="assets/javascripts/bundle.fc8c2696.min.js"></script>
       
     
   </body>

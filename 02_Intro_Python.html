@@ -8,8 +8,14 @@
       
       
       
+      
+        <link rel="prev" href="01_Intro_Programacion.html">
+      
+      
+        <link rel="next" href="03_Condicionales.html">
+      
       <link rel="icon" href="images/favicon.png">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.6">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.2">
     
     
       
@@ -17,13 +23,13 @@
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.4a0965b7.min.css">
+      <link rel="stylesheet" href="assets/stylesheets/main.7bf56d0a.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.cbb835fc.min.css">
-        
+        <link rel="stylesheet" href="assets/stylesheets/palette.a0c5b2b5.min.css">
       
       
+
     
     
     
@@ -36,10 +42,11 @@
       
     
     
-    <script>__md_scope=new URL(".",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
+    
     
     
   </head>
@@ -50,7 +57,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
   
     
     
@@ -72,12 +79,14 @@
     
       
 
-<header class="md-header" data-md-component="header">
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="index.html" title="IWI-131 Programación" class="md-header__button md-logo" aria-label="IWI-131 Programación" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M128 96h384v256h64V80c0-26.37-21.6-48-48-48H112c-26.37 0-48 21.63-48 48v272h64V96zm496 288H16c-8.75 0-16 7.3-16 16v16c0 35.25 28.75 64 64 64h512c35.25 0 64-28.75 64-64v-16c0-8.7-7.2-16-16-16zm-258.1-97.8c3.9 3.9 9 5.8 14.1 5.8s10.23-1.938 14.14-5.844l48-48c7.812-7.813 7.812-20.5 0-28.31l-48-48c-7.812-7.813-20.47-7.813-28.28 0-7.812 7.813-7.812 20.5 0 28.31l33.86 33.84-33.86 33.84C358 265.7 358 278.4 365.9 286.2zm-91.8-124.3c-7.812-7.813-20.47-7.813-28.28 0l-48 48c-7.812 7.813-7.812 20.5 0 28.31l48 48C249.8 290.1 254.9 292 260 292s10.23-1.938 14.14-5.844c7.812-7.813 7.812-20.5 0-28.31L240.3 224l33.86-33.84c6.94-7.76 6.94-20.46-.06-28.26z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M64 96c0-35.3 28.7-64 64-64h384c35.3 0 64 28.7 64 64v256h-64V96H128v256H64V96zM0 403.2C0 392.6 8.6 384 19.2 384h601.6c10.6 0 19.2 8.6 19.2 19.2 0 42.4-34.4 76.8-76.8 76.8H76.8C34.4 480 0 445.6 0 403.2zM281 209l-31 31 31 31c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-48-48c-9.4-9.4-9.4-24.6 0-33.9l48-48c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9zm112-34 48 48c9.4 9.4 9.4 24.6 0 33.9l-48 48c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l31-31-31-31c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0z"/></svg>
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -116,7 +125,7 @@
       </label>
       <nav class="md-search__options" aria-label="Search">
         
-        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
         </button>
       </nav>
@@ -128,7 +137,7 @@
           <div class="md-search-result__meta">
             Initializing search
           </div>
-          <ol class="md-search-result__list"></ol>
+          <ol class="md-search-result__list" role="presentation"></ol>
         </div>
       </div>
     </div>
@@ -140,7 +149,7 @@
         <a href="https://github.com/progra-utfsm/material" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
   </div>
   <div class="md-source__repository">
     progra-utfsm/material
@@ -175,7 +184,7 @@
     <a href="index.html" title="IWI-131 Programación" class="md-nav__button md-logo" aria-label="IWI-131 Programación" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M128 96h384v256h64V80c0-26.37-21.6-48-48-48H112c-26.37 0-48 21.63-48 48v272h64V96zm496 288H16c-8.75 0-16 7.3-16 16v16c0 35.25 28.75 64 64 64h512c35.25 0 64-28.75 64-64v-16c0-8.7-7.2-16-16-16zm-258.1-97.8c3.9 3.9 9 5.8 14.1 5.8s10.23-1.938 14.14-5.844l48-48c7.812-7.813 7.812-20.5 0-28.31l-48-48c-7.812-7.813-20.47-7.813-28.28 0-7.812 7.813-7.812 20.5 0 28.31l33.86 33.84-33.86 33.84C358 265.7 358 278.4 365.9 286.2zm-91.8-124.3c-7.812-7.813-20.47-7.813-28.28 0l-48 48c-7.812 7.813-7.812 20.5 0 28.31l48 48C249.8 290.1 254.9 292 260 292s10.23-1.938 14.14-5.844c7.812-7.813 7.812-20.5 0-28.31L240.3 224l33.86-33.84c6.94-7.76 6.94-20.46-.06-28.26z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M64 96c0-35.3 28.7-64 64-64h384c35.3 0 64 28.7 64 64v256h-64V96H128v256H64V96zM0 403.2C0 392.6 8.6 384 19.2 384h601.6c10.6 0 19.2 8.6 19.2 19.2 0 42.4-34.4 76.8-76.8 76.8H76.8C34.4 480 0 445.6 0 403.2zM281 209l-31 31 31 31c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-48-48c-9.4-9.4-9.4-24.6 0-33.9l48-48c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9zm112-34 48 48c9.4 9.4 9.4 24.6 0 33.9l-48 48c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l31-31-31-31c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0z"/></svg>
 
     </a>
     IWI-131 Programación
@@ -185,7 +194,7 @@
       <a href="https://github.com/progra-utfsm/material" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
   </div>
   <div class="md-source__repository">
     progra-utfsm/material
@@ -217,57 +226,10 @@
   
   
   
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_2">
-          Introducción
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Introducción" data-md-level="1">
-        <label class="md-nav__title" for="__nav_2">
-          <span class="md-nav__icon md-icon"></span>
-          Introducción
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
     <li class="md-nav__item">
       <a href="01_Intro_Programacion.html" class="md-nav__link">
-        Algoritmos
+        Introducción
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="01-a_Uso_Trinket.html" class="md-nav__link">
-        Trinket
-      </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
     </li>
   
 
@@ -283,7 +245,7 @@
   
     <li class="md-nav__item md-nav__item--active">
       
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
         
@@ -1032,10 +994,11 @@
               </div>
             
           
-          <div class="md-content" data-md-component="content">
-            <article class="md-content__inner md-typeset">
-              
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
                 
+                  
 
 
 <script>
@@ -1232,6 +1195,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 .highlight-ipynb .m { color: var(--jp-mirror-editor-number-color) } /* Literal.Number */
 .highlight-ipynb .s { color: var(--jp-mirror-editor-string-color) } /* Literal.String */
 .highlight-ipynb .ow { color: var(--jp-mirror-editor-operator-color); font-weight: bold } /* Operator.Word */
+.highlight-ipynb .pm { color: var(--jp-mirror-editor-punctuation-color) } /* Punctuation.Marker */
 .highlight-ipynb .w { color: var(--jp-mirror-editor-variable-color) } /* Text.Whitespace */
 .highlight-ipynb .mb { color: var(--jp-mirror-editor-number-color) } /* Literal.Number.Bin */
 .highlight-ipynb .mf { color: var(--jp-mirror-editor-number-color) } /* Literal.Number.Float */
@@ -2056,12 +2020,12 @@ Licensed under the Apache License, Version 2.0.
                 },
                 displayAlign: 'center',
                 CommonHTML: {
-                    linebreaks: { 
-                    automatic: true 
+                    linebreaks: {
+                    automatic: true
                     }
                 }
             });
-        
+
             MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
         }
     }
@@ -2074,7 +2038,7 @@ Licensed under the Apache License, Version 2.0.
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="iwi-131-programacion">IWI-131 Programaci&#243;n<a class="anchor-link" href="#iwi-131-programacion">&#182;</a></h1>
+<h1 id="IWI-131-Programaci%C3%B3n">IWI-131 Programaci&#243;n<a class="anchor-link" href="#IWI-131-Programaci%C3%B3n">&#182;</a></h1>
 </div>
 </div>
 </div>
@@ -2085,7 +2049,7 @@ Licensed under the Apache License, Version 2.0.
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="introduccion-a-python-3x">Introducci&#243;n a Python 3.X<a class="anchor-link" href="#introduccion-a-python-3x">&#182;</a></h2>
+<h2 id="Introducci%C3%B3n-a-Python-3.X">Introducci&#243;n a Python 3.X<a class="anchor-link" href="#Introducci%C3%B3n-a-Python-3.X">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -2113,7 +2077,7 @@ Licensed under the Apache License, Version 2.0.
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="tipos-de-datos">Tipos de Datos<a class="anchor-link" href="#tipos-de-datos">&#182;</a></h2><p>Python opera sobre datos de distintos tipos. Cada tipo de datos tiene reglas que establecen la forma en que se deben escribir los valores literales (constantes) de ese tipo. Además, cada tipo de datos cuentan con una serie de operadores y funciones que se pueden aplicar. En algunos casos es posible convertir un dato particular de un tipo a otro, ya sea de forma implícita o explícita.</p>
+<h2 id="Tipos-de-Datos">Tipos de Datos<a class="anchor-link" href="#Tipos-de-Datos">&#182;</a></h2><p>Python opera sobre datos de distintos tipos. Cada tipo de datos tiene reglas que establecen la forma en que se deben escribir los valores literales (constantes) de ese tipo. Además, cada tipo de datos cuentan con una serie de operadores y funciones que se pueden aplicar. En algunos casos es posible convertir un dato particular de un tipo a otro, ya sea de forma implícita o explícita.</p>
 
 </div>
 </div>
@@ -2125,7 +2089,7 @@ Licensed under the Apache License, Version 2.0.
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="numeros-enteros">N&#250;meros enteros<a class="anchor-link" href="#numeros-enteros">&#182;</a></h3><p>Tipo <code>int</code> (<em>integer</em>)</p>
+<h3 id="N%C3%BAmeros-enteros">N&#250;meros enteros<a class="anchor-link" href="#N%C3%BAmeros-enteros">&#182;</a></h3><p>Tipo <code>int</code> (<em>integer</em>)</p>
 
 </div>
 </div>
@@ -2167,9 +2131,7 @@ Licensed under the Apache License, Version 2.0.
 
 
 <div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
     <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[1]:</div>
 
@@ -2224,9 +2186,7 @@ Licensed under the Apache License, Version 2.0.
 
 
 <div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
     <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[2]:</div>
 
@@ -2281,9 +2241,7 @@ Licensed under the Apache License, Version 2.0.
 
 
 <div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
     <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[3]:</div>
 
@@ -2308,7 +2266,7 @@ Licensed under the Apache License, Version 2.0.
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="numeros-reales">N&#250;meros Reales<a class="anchor-link" href="#numeros-reales">&#182;</a></h3><p>Tipo <code>float</code> (<em>floating point</em>)</p>
+<h3 id="N%C3%BAmeros-Reales">N&#250;meros Reales<a class="anchor-link" href="#N%C3%BAmeros-Reales">&#182;</a></h3><p>Tipo <code>float</code> (<em>floating point</em>)</p>
 
 </div>
 </div>
@@ -2350,9 +2308,7 @@ Licensed under the Apache License, Version 2.0.
 
 
 <div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
     <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[4]:</div>
 
@@ -2407,9 +2363,7 @@ Licensed under the Apache License, Version 2.0.
 
 
 <div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
     <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[5]:</div>
 
@@ -2464,9 +2418,7 @@ Licensed under the Apache License, Version 2.0.
 
 
 <div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
     <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[6]:</div>
 
@@ -2491,7 +2443,7 @@ Licensed under the Apache License, Version 2.0.
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="valores-logicos">Valores L&#243;gicos<a class="anchor-link" href="#valores-logicos">&#182;</a></h3><p>Tipo <code>bool</code></p>
+<h3 id="Valores-L%C3%B3gicos">Valores L&#243;gicos<a class="anchor-link" href="#Valores-L%C3%B3gicos">&#182;</a></h3><p>Tipo <code>bool</code></p>
 
 </div>
 </div>
@@ -2533,9 +2485,7 @@ Licensed under the Apache License, Version 2.0.
 
 
 <div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
     <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[7]:</div>
 
@@ -2590,9 +2540,7 @@ Licensed under the Apache License, Version 2.0.
 
 
 <div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
     <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[8]:</div>
 
@@ -2617,7 +2565,7 @@ Licensed under the Apache License, Version 2.0.
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="texto">Texto<a class="anchor-link" href="#texto">&#182;</a></h3><p>Tipo <code>str</code> (<em>strings</em>)</p>
+<h3 id="Texto">Texto<a class="anchor-link" href="#Texto">&#182;</a></h3><p>Tipo <code>str</code> (<em>strings</em>)</p>
 
 </div>
 </div>
@@ -2659,9 +2607,7 @@ Licensed under the Apache License, Version 2.0.
 
 
 <div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
     <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[9]:</div>
 
@@ -2716,9 +2662,7 @@ Licensed under the Apache License, Version 2.0.
 
 
 <div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
     <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[10]:</div>
 
@@ -2773,9 +2717,7 @@ Licensed under the Apache License, Version 2.0.
 
 
 <div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
     <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[11]:</div>
 
@@ -2830,9 +2772,7 @@ Licensed under the Apache License, Version 2.0.
 
 
 <div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
     <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[12]:</div>
 
@@ -2857,7 +2797,7 @@ Licensed under the Apache License, Version 2.0.
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="expresiones-y-operadores">Expresiones y operadores<a class="anchor-link" href="#expresiones-y-operadores">&#182;</a></h2>
+<h2 id="Expresiones-y-operadores">Expresiones y operadores<a class="anchor-link" href="#Expresiones-y-operadores">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -2899,7 +2839,7 @@ Pueden estar formados por:</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="operadores-aritmeticos">Operadores Aritm&#233;ticos<a class="anchor-link" href="#operadores-aritmeticos">&#182;</a></h3>
+<h3 id="Operadores-Aritm%C3%A9ticos">Operadores Aritm&#233;ticos<a class="anchor-link" href="#Operadores-Aritm%C3%A9ticos">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -2927,7 +2867,7 @@ Pueden ser:</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="operadores-binarios">&#160;Operadores binarios<a class="anchor-link" href="#operadores-binarios">&#182;</a></h4><ul>
+<h4 id="Operadores-binarios">Operadores binarios<a class="anchor-link" href="#Operadores-binarios">&#182;</a></h4><ul>
 <li>Suma (<code>+</code>)</li>
 <li>Resta (<code>-</code>)</li>
 <li>Multiplicación (<code>*</code>)</li>
@@ -2977,9 +2917,7 @@ Pueden ser:</p>
 
 
 <div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
     <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[13]:</div>
 
@@ -3034,9 +2972,7 @@ Pueden ser:</p>
 
 
 <div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
     <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[14]:</div>
 
@@ -3091,9 +3027,7 @@ Pueden ser:</p>
 
 
 <div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
     <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[15]:</div>
 
@@ -3148,9 +3082,7 @@ Pueden ser:</p>
 
 
 <div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
     <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[16]:</div>
 
@@ -3205,9 +3137,7 @@ Pueden ser:</p>
 
 
 <div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
     <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[17]:</div>
 
@@ -3262,9 +3192,7 @@ Pueden ser:</p>
 
 
 <div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
     <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[18]:</div>
 
@@ -3319,9 +3247,7 @@ Pueden ser:</p>
 
 
 <div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
     <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[19]:</div>
 
@@ -3346,7 +3272,7 @@ Pueden ser:</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="operadores-unarios">&#160;Operadores unarios<a class="anchor-link" href="#operadores-unarios">&#182;</a></h4><ul>
+<h4 id="Operadores-unarios">Operadores unarios<a class="anchor-link" href="#Operadores-unarios">&#182;</a></h4><ul>
 <li>Positivo (<code>+</code>)</li>
 <li>Negativo (<code>-</code>)</li>
 </ul>
@@ -3391,9 +3317,7 @@ Pueden ser:</p>
 
 
 <div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
     <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[20]:</div>
 
@@ -3448,9 +3372,7 @@ Pueden ser:</p>
 
 
 <div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
     <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[21]:</div>
 
@@ -3475,7 +3397,7 @@ Pueden ser:</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="llamados-a-funciones-y-uso-de-biblioteca">Llamados a funciones y uso de biblioteca<a class="anchor-link" href="#llamados-a-funciones-y-uso-de-biblioteca">&#182;</a></h2><p>Algunas funciones se encuentran incorporadas al núcleo del lenguaje Python y se pueden utilizar directamente (<code>round</code>, <code>abs</code>). En otros casos, las funciones están agrupadas en colecciones denominadas bibliotecas (<code>math</code>, <code>random</code>), y es necesario primero importarlas desde la biblioteca antes de poder utilizarlas.</p>
+<h2 id="Llamados-a-funciones-y-uso-de-biblioteca">Llamados a funciones y uso de biblioteca<a class="anchor-link" href="#Llamados-a-funciones-y-uso-de-biblioteca">&#182;</a></h2><p>Algunas funciones se encuentran incorporadas al núcleo del lenguaje Python y se pueden utilizar directamente (<code>round</code>, <code>abs</code>). En otros casos, las funciones están agrupadas en colecciones denominadas bibliotecas (<code>math</code>, <code>random</code>), y es necesario primero importarlas desde la biblioteca antes de poder utilizarlas.</p>
 
 </div>
 </div>
@@ -3541,9 +3463,7 @@ Pueden ser:</p>
 
 
 <div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
     <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[22]:</div>
 
@@ -3610,9 +3530,7 @@ Pueden ser:</p>
 
 
 <div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
     <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[23]:</div>
 
@@ -3637,7 +3555,7 @@ Pueden ser:</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="ejemplos-de-funciones-de-la-biblioteca-math">Ejemplos de funciones de la biblioteca <code>math</code><a class="anchor-link" href="#ejemplos-de-funciones-de-la-biblioteca-math">&#182;</a></h3>
+<h3 id="Ejemplos-de-funciones-de-la-biblioteca-math">Ejemplos de funciones de la biblioteca <code>math</code><a class="anchor-link" href="#Ejemplos-de-funciones-de-la-biblioteca-math">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -3692,9 +3610,7 @@ exp(1)</div>
 
 
 <div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
     <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[24]:</div>
 
@@ -3763,9 +3679,7 @@ math.sqrt(36)</div>
 
 
 <div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
     <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[25]:</div>
 
@@ -3790,7 +3704,7 @@ math.sqrt(36)</div>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="ejemplos-de-funciones-de-la-biblioteca-random">Ejemplos de funciones de la biblioteca <code>random</code><a class="anchor-link" href="#ejemplos-de-funciones-de-la-biblioteca-random">&#182;</a></h3>
+<h3 id="Ejemplos-de-funciones-de-la-biblioteca-random">Ejemplos de funciones de la biblioteca <code>random</code><a class="anchor-link" href="#Ejemplos-de-funciones-de-la-biblioteca-random">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -3845,9 +3759,7 @@ randint(1,10)</div>
 
 
 <div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
     <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[26]:</div>
 
@@ -3872,7 +3784,7 @@ randint(1,10)</div>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="precedencia-de-operadores">Precedencia de Operadores<a class="anchor-link" href="#precedencia-de-operadores">&#182;</a></h2>
+<h2 id="Precedencia-de-Operadores">Precedencia de Operadores<a class="anchor-link" href="#Precedencia-de-Operadores">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -3888,8 +3800,8 @@ randint(1,10)</div>
 <li><code>(, )</code> (parentesis)</li>
 </ol>
 <ul>
-<li><code>abs()</code>, <code>sqrt()</code>, <code>randint()</code> (llamada a funciones) </li>
-<li><code>**</code> </li>
+<li><code>abs()</code>, <code>sqrt()</code>, <code>randint()</code> (llamada a funciones)</li>
+<li><code>**</code></li>
 <li><code>+x</code>, <code>-x</code> (unario)</li>
 <li><code>*</code>, <code>/</code>, <code>//</code>, <code>%</code></li>
 <li><code>+</code>, <code>-</code></li>
@@ -3905,7 +3817,7 @@ randint(1,10)</div>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="asociatividad-de-operadores">Asociatividad de Operadores<a class="anchor-link" href="#asociatividad-de-operadores">&#182;</a></h3>
+<h3 id="Asociatividad-de-Operadores">Asociatividad de Operadores<a class="anchor-link" href="#Asociatividad-de-Operadores">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -3958,9 +3870,7 @@ randint(1,10)</div>
 
 
 <div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
     <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[27]:</div>
 
@@ -4027,9 +3937,7 @@ randint(1,10)</div>
 
 
 <div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
     <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[28]:</div>
 
@@ -4054,7 +3962,7 @@ randint(1,10)</div>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="conversion-entre-tipos-de-datos-casting">Conversi&#243;n entre tipos de datos (<em>casting</em>)<a class="anchor-link" href="#conversion-entre-tipos-de-datos-casting">&#182;</a></h2>
+<h2 id="Conversi%C3%B3n-entre-tipos-de-datos-(casting)">Conversi&#243;n entre tipos de datos (<em>casting</em>)<a class="anchor-link" href="#Conversi%C3%B3n-entre-tipos-de-datos-(casting)">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -4095,9 +4003,7 @@ randint(1,10)</div>
 
 
 <div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
     <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[29]:</div>
 
@@ -4152,9 +4058,7 @@ randint(1,10)</div>
 
 
 <div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
     <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[30]:</div>
 
@@ -4209,9 +4113,7 @@ randint(1,10)</div>
 
 
 <div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
     <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[31]:</div>
 
@@ -4266,9 +4168,7 @@ randint(1,10)</div>
 
 
 <div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
     <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[32]:</div>
 
@@ -4323,9 +4223,7 @@ randint(1,10)</div>
 
 
 <div class="jp-OutputArea jp-Cell-outputArea">
-
 <div class="jp-OutputArea-child">
-
     
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
@@ -4353,11 +4251,12 @@ randint(1,10)</div>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="asignacion-de-variables">Asignaci&#243;n de variables<a class="anchor-link" href="#asignacion-de-variables">&#182;</a></h2><p>Una asignación de variables tiene la forma:</p>
+<h2 id="Asignaci%C3%B3n-de-variables">Asignaci&#243;n de variables<a class="anchor-link" href="#Asignaci%C3%B3n-de-variables">&#182;</a></h2><p>Una asignación de variables tiene la forma:</p>
 <div align="center">
 <div style="font-size:2em"> &lt;variable&gt; = &lt;expresion&gt;</div>
 <img src="images/asignacion_var.jpg" width="250px"/>
 </div>
+
 </div>
 </div>
 </div>
@@ -4433,9 +4332,7 @@ e = e + 1</div>
 
 
 <div class="jp-OutputArea jp-Cell-outputArea">
-
 <div class="jp-OutputArea-child">
-
     
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
@@ -4465,7 +4362,7 @@ e = e + 1</div>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="entrada-de-datos">Entrada de datos<a class="anchor-link" href="#entrada-de-datos">&#182;</a></h2>
+<h2 id="Entrada-de-datos">Entrada de datos<a class="anchor-link" href="#Entrada-de-datos">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -4506,9 +4403,7 @@ e = e + 1</div>
 
 
 <div class="jp-OutputArea jp-Cell-outputArea">
-
 <div class="jp-OutputArea-child">
-
     
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
@@ -4561,9 +4456,7 @@ e = e + 1</div>
 
 
 <div class="jp-OutputArea jp-Cell-outputArea">
-
 <div class="jp-OutputArea-child">
-
     
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
@@ -4628,9 +4521,7 @@ e = e + 1</div>
 
 
 <div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
     <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[38]:</div>
 
@@ -4655,7 +4546,7 @@ e = e + 1</div>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="salida-de-datos">Salida de datos<a class="anchor-link" href="#salida-de-datos">&#182;</a></h2>
+<h2 id="Salida-de-datos">Salida de datos<a class="anchor-link" href="#Salida-de-datos">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -4696,9 +4587,7 @@ e = e + 1</div>
 
 
 <div class="jp-OutputArea jp-Cell-outputArea">
-
 <div class="jp-OutputArea-child">
-
     
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
@@ -4785,9 +4674,7 @@ x = a**2</div>
 
 
 <div class="jp-OutputArea jp-Cell-outputArea">
-
 <div class="jp-OutputArea-child">
-
     
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
@@ -4840,9 +4727,7 @@ x = a**2</div>
 
 
 <div class="jp-OutputArea jp-Cell-outputArea">
-
 <div class="jp-OutputArea-child">
-
     
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
@@ -4897,9 +4782,7 @@ print(x)</div>
 
 
 <div class="jp-OutputArea jp-Cell-outputArea">
-
 <div class="jp-OutputArea-child">
-
     
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
@@ -4923,7 +4806,7 @@ print(x)</div>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="comentarios">Comentarios<a class="anchor-link" href="#comentarios">&#182;</a></h2><ul>
+<h2 id="Comentarios">Comentarios<a class="anchor-link" href="#Comentarios">&#182;</a></h2><ul>
 <li>Son textos que serán ignorados por el intérprete de Python</li>
 <li>Se utilizan para explicar el código y hacerlo más fácil de entender</li>
 <li>Existen dos tipos de comentario:<ol>
@@ -4983,9 +4866,7 @@ print(2 + 2)</div>
 
 
 <div class="jp-OutputArea jp-Cell-outputArea">
-
 <div class="jp-OutputArea-child">
-
     
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
@@ -5008,7 +4889,7 @@ print(2 + 2)</div>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="ejemplos">Ejemplos<a class="anchor-link" href="#ejemplos">&#182;</a></h2>
+<h2 id="Ejemplos">Ejemplos<a class="anchor-link" href="#Ejemplos">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -5019,7 +4900,7 @@ print(2 + 2)</div>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="ejemplo-1">Ejemplo 1<a class="anchor-link" href="#ejemplo-1">&#182;</a></h3><p>Solicitar el nombre del usuario e imprimir el mensaje <code>"Yo soy nombre"</code>.</p>
+<h3 id="Ejemplo-1">Ejemplo 1<a class="anchor-link" href="#Ejemplo-1">&#182;</a></h3><p>Solicitar el nombre del usuario e imprimir el mensaje <code>&quot;Yo soy nombre&quot;</code>.</p>
 
 </div>
 </div>
@@ -5063,9 +4944,7 @@ print("Yo soy", nombre)</div>
 
 
 <div class="jp-OutputArea jp-Cell-outputArea">
-
 <div class="jp-OutputArea-child">
-
     
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
@@ -5089,7 +4968,7 @@ Yo soy Juan
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="ejemplo-2">Ejemplo 2<a class="anchor-link" href="#ejemplo-2">&#182;</a></h3><p>Desarrollar un programa que convierta temperatura de Farenheit a Celsius. La fórmula de conversión es la siguiente:</p>
+<h3 id="Ejemplo-2">Ejemplo 2<a class="anchor-link" href="#Ejemplo-2">&#182;</a></h3><p>Desarrollar un programa que convierta temperatura de Farenheit a Celsius. La fórmula de conversión es la siguiente:</p>
 \begin{equation}
     C = \frac{5}{9}\,(F - 32)
 \end{equation}
@@ -5137,9 +5016,7 @@ print('El equivalente en Celsius es aproximadamente:', int(round(c)))</div>
 
 
 <div class="jp-OutputArea jp-Cell-outputArea">
-
 <div class="jp-OutputArea-child">
-
     
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
@@ -5163,7 +5040,7 @@ El equivalente en Celsius es aproximadamente: 0
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="algunos-errores">Algunos errores<a class="anchor-link" href="#algunos-errores">&#182;</a></h2>
+<h2 id="Algunos-errores">Algunos errores<a class="anchor-link" href="#Algunos-errores">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -5174,7 +5051,7 @@ El equivalente en Celsius es aproximadamente: 0
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="error-de-ejecucion-runtime-error">Error de ejecuci&#243;n (<em>runtime error</em>)<a class="anchor-link" href="#error-de-ejecucion-runtime-error">&#182;</a></h3><p>Un error de ejecución ocurre cuando el programa termina abruptamente por una condición que ocurre y que le impide continuar ejecutándose. Por ejemplo, cuando se produce un error aritmético al intentar hacer una división por cero.</p>
+<h3 id="Error-de-ejecuci%C3%B3n-(runtime-error)">Error de ejecuci&#243;n (<em>runtime error</em>)<a class="anchor-link" href="#Error-de-ejecuci%C3%B3n-(runtime-error)">&#182;</a></h3><p>Un error de ejecución ocurre cuando el programa termina abruptamente por una condición que ocurre y que le impide continuar ejecutándose. Por ejemplo, cuando se produce un error aritmético al intentar hacer una división por cero.</p>
 
 </div>
 </div>
@@ -5222,9 +5099,7 @@ print(n/m)</div>
 
 
 <div class="jp-OutputArea jp-Cell-outputArea">
-
 <div class="jp-OutputArea-child">
-
     
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
@@ -5234,9 +5109,7 @@ print(n/m)</div>
 </pre>
 </div>
 </div>
-
 <div class="jp-OutputArea-child">
-
     
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
@@ -5266,7 +5139,7 @@ print(n/m)</div>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="error-de-sintaxis-syntax-error">Error de sintaxis (<em>syntax error</em>)<a class="anchor-link" href="#error-de-sintaxis-syntax-error">&#182;</a></h3><p>Un error de sintaxis ocurre cuando nos equivocamos en la forma (sintaxis) de escribir una instrucción de nuestro programa. Por ejemplo, cuando no cerramos la cantidad adecuada de paréntesis, olvidamos una coma, escribimos mal una instrucción de Python.</p>
+<h3 id="Error-de-sintaxis-(syntax-error)">Error de sintaxis (<em>syntax error</em>)<a class="anchor-link" href="#Error-de-sintaxis-(syntax-error)">&#182;</a></h3><p>Un error de sintaxis ocurre cuando nos equivocamos en la forma (sintaxis) de escribir una instrucción de nuestro programa. Por ejemplo, cuando no cerramos la cantidad adecuada de paréntesis, olvidamos una coma, escribimos mal una instrucción de Python.</p>
 
 </div>
 </div>
@@ -5308,9 +5181,7 @@ print(n/m)</div>
 
 
 <div class="jp-OutputArea jp-Cell-outputArea">
-
 <div class="jp-OutputArea-child">
-
     
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
@@ -5373,9 +5244,7 @@ print(n)</div>
 
 
 <div class="jp-OutputArea jp-Cell-outputArea">
-
 <div class="jp-OutputArea-child">
-
     
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
@@ -5402,7 +5271,7 @@ print(n)</div>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="errores-de-nombre-name-error">Errores de nombre (<em>name error</em>)<a class="anchor-link" href="#errores-de-nombre-name-error">&#182;</a></h3><p>Un error de nombre ocurre cuando se intenta acceder al contenido de una variable que no ha sido inicializada y que por lo tanto no existe. También puede ocurrir al intentar utilizar una función que no ha sido definida o importada desde una biblioteca.</p>
+<h3 id="Errores-de-nombre-(name-error)">Errores de nombre (<em>name error</em>)<a class="anchor-link" href="#Errores-de-nombre-(name-error)">&#182;</a></h3><p>Un error de nombre ocurre cuando se intenta acceder al contenido de una variable que no ha sido inicializada y que por lo tanto no existe. También puede ocurrir al intentar utilizar una función que no ha sido definida o importada desde una biblioteca.</p>
 
 </div>
 </div>
@@ -5448,9 +5317,7 @@ print(5 * y)</div>
 
 
 <div class="jp-OutputArea jp-Cell-outputArea">
-
 <div class="jp-OutputArea-child">
-
     
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
@@ -5460,9 +5327,7 @@ print(5 * y)</div>
 </pre>
 </div>
 </div>
-
 <div class="jp-OutputArea-child">
-
     
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
@@ -5492,7 +5357,7 @@ print(5 * y)</div>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="reglas-para-definir-identificadores">Reglas para definir identificadores<a class="anchor-link" href="#reglas-para-definir-identificadores">&#182;</a></h2>
+<h2 id="Reglas-para-definir-identificadores">Reglas para definir identificadores<a class="anchor-link" href="#Reglas-para-definir-identificadores">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -5532,7 +5397,7 @@ print(5 * y)</div>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="ejercicios">Ejercicios<a class="anchor-link" href="#ejercicios">&#182;</a></h2>
+<h2 id="Ejercicios">Ejercicios<a class="anchor-link" href="#Ejercicios">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -5543,7 +5408,7 @@ print(5 * y)</div>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="ejercicio-1">Ejercicio 1<a class="anchor-link" href="#ejercicio-1">&#182;</a></h3><p>Escribir una expresión para sumar los dígitos de un número entero de $3$ dígitos, que se ingrese por pantalla:</p>
+<h3 id="Ejercicio-1">Ejercicio 1<a class="anchor-link" href="#Ejercicio-1">&#182;</a></h3><p>Escribir una expresión para sumar los dígitos de un número entero de $3$ dígitos, que se ingrese por pantalla:</p>
 
 </div>
 </div>
@@ -5589,9 +5454,7 @@ print(suma)</div>
 
 
 <div class="jp-OutputArea jp-Cell-outputArea">
-
 <div class="jp-OutputArea-child">
-
     
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
@@ -5615,7 +5478,7 @@ print(suma)</div>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="ejercicio-2">Ejercicio 2<a class="anchor-link" href="#ejercicio-2">&#182;</a></h3><p>Modifique el resultado anterior para que reciba un entero con $3$ dígitos iguales y retorne el resultado <code>n//suma</code>.</p>
+<h3 id="Ejercicio-2">Ejercicio 2<a class="anchor-link" href="#Ejercicio-2">&#182;</a></h3><p>Modifique el resultado anterior para que reciba un entero con $3$ dígitos iguales y retorne el resultado <code>n//suma</code>.</p>
 
 </div>
 </div>
@@ -5663,9 +5526,7 @@ print(resultado)</div>
 
 
 <div class="jp-OutputArea jp-Cell-outputArea">
-
 <div class="jp-OutputArea-child">
-
     
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
@@ -5689,7 +5550,7 @@ print(resultado)</div>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="ejercicio-3">Ejercicio 3<a class="anchor-link" href="#ejercicio-3">&#182;</a></h3><p>Realice un programa que determine el área de un círculo a partir de su radio.</p>
+<h3 id="Ejercicio-3">Ejercicio 3<a class="anchor-link" href="#Ejercicio-3">&#182;</a></h3><p>Realice un programa que determine el área de un círculo a partir de su radio.</p>
 
 </div>
 </div>
@@ -5735,9 +5596,7 @@ print("El área de la circunferencia es", pi*(radio**2))</div>
 
 
 <div class="jp-OutputArea jp-Cell-outputArea">
-
 <div class="jp-OutputArea-child">
-
     
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
@@ -5761,7 +5620,7 @@ El área de la circunferencia es 50.264
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="ejercicio-4">Ejercicio 4<a class="anchor-link" href="#ejercicio-4">&#182;</a></h3><p><strong>RUTEO</strong>: Rutee el siguiente programa e indique que es lo que imprime. Cada vez que el valor de una variable cambie, ponga su valor en una nueva fila de la tabla. La tabla tiene filas de sobra:</p>
+<h3 id="Ejercicio-4">Ejercicio 4<a class="anchor-link" href="#Ejercicio-4">&#182;</a></h3><p><strong>RUTEO</strong>: Rutee el siguiente programa e indique que es lo que imprime. Cada vez que el valor de una variable cambie, ponga su valor en una nueva fila de la tabla. La tabla tiene filas de sobra:</p>
 
 </div>
 </div>
@@ -5798,91 +5657,92 @@ El área de la circunferencia es 50.264
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p><strong>Solución ruteo</strong>:</p>
 <table>
-<thead><tr>
-<th></th>
-<th></th>
-<th></th>
-<th></th>
-<th></th>
+<thead>
+<tr>
+  <th></th>
+  <th></th>
+  <th></th>
+  <th></th>
+  <th></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>a</strong></td>
-<td><strong>b</strong></td>
-<td><strong>c</strong></td>
-<td><strong>d</strong></td>
-<td><strong>e</strong></td>
+  <td><strong>a</strong></td>
+  <td><strong>b</strong></td>
+  <td><strong>c</strong></td>
+  <td><strong>d</strong></td>
+  <td><strong>e</strong></td>
 </tr>
 <tr>
-<td>94567</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+  <td>94567</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
 </tr>
 <tr>
-<td></td>
-<td>28954</td>
-<td></td>
-<td></td>
-<td></td>
+  <td></td>
+  <td>28954</td>
+  <td></td>
+  <td></td>
+  <td></td>
 </tr>
 <tr>
-<td></td>
-<td></td>
-<td>36532</td>
-<td></td>
-<td></td>
+  <td></td>
+  <td></td>
+  <td>36532</td>
+  <td></td>
+  <td></td>
 </tr>
 <tr>
-<td></td>
-<td></td>
-<td></td>
-<td>11404</td>
-<td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>11404</td>
+  <td></td>
 </tr>
 <tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td>40613</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>40613</td>
 </tr>
 <tr>
-<td>9</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+  <td>9</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
 </tr>
 <tr>
-<td></td>
-<td>8</td>
-<td></td>
-<td></td>
-<td></td>
+  <td></td>
+  <td>8</td>
+  <td></td>
+  <td></td>
+  <td></td>
 </tr>
 <tr>
-<td></td>
-<td></td>
-<td>5</td>
-<td></td>
-<td></td>
+  <td></td>
+  <td></td>
+  <td>5</td>
+  <td></td>
+  <td></td>
 </tr>
 <tr>
-<td></td>
-<td></td>
-<td></td>
-<td>0</td>
-<td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>0</td>
+  <td></td>
 </tr>
 <tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td>3</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>3</td>
 </tr>
 </tbody>
 </table>
@@ -5897,7 +5757,7 @@ El área de la circunferencia es 50.264
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="ejercicio-5">Ejercicio 5<a class="anchor-link" href="#ejercicio-5">&#182;</a></h3><p>Realice un programa que calcule el área de un triángulo a partir de las longitudes de sus lados.</p>
+<h3 id="Ejercicio-5">Ejercicio 5<a class="anchor-link" href="#Ejercicio-5">&#182;</a></h3><p>Realice un programa que calcule el área de un triángulo a partir de las longitudes de sus lados.</p>
 
 </div>
 </div>
@@ -5978,9 +5838,7 @@ print("El área del triángulo es", area)</div>
 
 
 <div class="jp-OutputArea jp-Cell-outputArea">
-
 <div class="jp-OutputArea-child">
-
     
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
@@ -6004,51 +5862,20 @@ El área del triángulo es 6.0
 
 
 
-              
-            </article>
-            
-          </div>
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
         </div>
         
       </main>
       
         <footer class="md-footer">
-  
-    
-    <nav class="md-footer__inner md-grid" aria-label="Footer" >
-      
-        
-        <a href="01-a_Uso_Trinket.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: Trinket" rel="prev">
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
-          </div>
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Previous
-              </span>
-              Trinket
-            </div>
-          </div>
-        </a>
-      
-      
-        
-        <a href="03_Condicionales.html" class="md-footer__link md-footer__link--next" aria-label="Next: Condicionales" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              Condicionales
-            </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
-          </div>
-        </a>
-      
-    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
@@ -6074,10 +5901,11 @@ El área del triángulo es 6.0
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.instant"], "search": "assets/javascripts/workers/search.85cb4492.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.instant"], "search": "assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="assets/javascripts/bundle.a877e258.min.js"></script>
+      <script src="assets/javascripts/bundle.fc8c2696.min.js"></script>
       
     
   </body>
